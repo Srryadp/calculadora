@@ -1,3 +1,10 @@
+import os
+import time
+
+def clear_screen():
+    
+    return os.system('cls' if os.name == 'nt' else 'clear')
+
 def division(num1, num2):
     
     if num2 == 0:
@@ -34,6 +41,9 @@ def potencia(num1, num2):
 
 while True:
     
+    time.sleep(2)
+    clear_screen()
+
     print("\nBienvenido a la calculadora :D\n")
     
     print("1 para suma\n2 para resta\n3 para multiplicar\n4 para division\n5 para potenciacion\n6 para salir\n")
@@ -81,7 +91,9 @@ while True:
 
             print("\nEste es el resultado de la division:\n")
             print(division(num1, num2))
-
+            
+            time.sleep(2)
+        
         elif usuario == "5":
             
             try:
