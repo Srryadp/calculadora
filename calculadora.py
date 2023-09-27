@@ -91,8 +91,6 @@ while True:
 
             print("\nEste es el resultado de la division:\n")
             print(division(num1, num2))
-            
-            time.sleep(2)
         
         elif usuario == "5":
             
