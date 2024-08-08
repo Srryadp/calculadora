@@ -40,8 +40,11 @@ def potencia(num1, num2):
     return(potencia)
 
 def porcentaje(num1, num2):
+    
     if num2 == 0:
+    
         return "Error: División por cero"
+    
     return (num1 / num2) * 100
 
 while True:
