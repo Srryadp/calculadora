@@ -39,6 +39,11 @@ def potencia(num1, num2):
     
     return(potencia)
 
+def porcentaje(num1, num2):
+    if num2 == 0:
+        return "Error: División por cero"
+    return (num1 / num2) * 100
+
 while True:
     
     time.sleep(2)
@@ -46,7 +51,7 @@ while True:
 
     print("\nBienvenido a la calculadora :D\n")
     
-    print("1 para suma\n2 para resta\n3 para multiplicar\n4 para division\n5 para potenciacion\n6 para salir\n")
+    print("1 para suma\n2 para resta\n3 para multiplicar\n4 para division\n5 para potenciacion\n6 para porcentaje\n7 para salir\n")
     
     usuario = input("> ")
 
@@ -105,8 +110,17 @@ while True:
             except OverflowError:
                 
                 print("\nEl numero es muy grande como para calcular :(\n")
+       
+        elif usuario == "6"
+             print("\ningrese 2 valores\n")
+            
+            num1 = float(input())
+            num2 = float(input()) 
+            
+            print("\nEl resultado de la resta es:\n")
+            print(porcentaje(num1, num2))
         
-        elif usuario == "6":
+        elif usuario == "7":
 
             break
         
